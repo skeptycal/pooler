@@ -1,0 +1,3 @@
+package pooler // import "github.com/skeptycal/pooler"
+
+func Example()
