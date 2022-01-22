@@ -1,15 +1,14 @@
 package pooler // import "github.com/skeptycal/pooler"
 
-var DEBUG bool = false
 var WorkerChannel = make(chan chan Work)
 func CreateExampleJobs(amount int) []string
-func CreateJobs(amount int, js JobSpec) []string
-func DoWork(word string, id int)
 func Example()
+func ExampleWork(params Params)
 func RandStringRunes(n int) string
 type Any interface{}
 type Collector struct{ ... }
     func StartDispatcher(workerCount int) Collector
 type JobSpec interface{ ... }
+type Params map[string]Any
 type Work struct{ ... }
 type Worker interface{ ... }
